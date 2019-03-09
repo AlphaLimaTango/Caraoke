@@ -13,6 +13,7 @@ class KaraokeBar
   end
 
   def check_guest_into_karaoke_room(guest, room)
+    room.people_in_room << guest
     @people_in_lounge.delete(guest)
   end
 
@@ -21,7 +22,6 @@ class KaraokeBar
   end
 
   def check_out_guest_from_karaoke_room(guest, room)
-    # room.people_in_room.delete(guest)
     @people_in_lounge << guest
   end
 

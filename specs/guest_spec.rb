@@ -44,4 +44,12 @@ class TestGuest < MiniTest::Test
     @guest1.pay_room_fee(@room_small)
     assert_equal(140, @guest1.cash_in_wallet)
   end
+
+  def test_guest_sing
+    assert_equal("Do re me fa so la ti do", @guest1.sing)
+  end
+
+  def test_guest_cheer
+    assert_equal("Yaldi!", @guest1.cheer)
+  end
 end

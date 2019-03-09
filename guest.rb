@@ -16,4 +16,12 @@ class Guest
   def pay_room_fee(room_name)
     @cash_in_wallet -= room_name.cost
   end
+
+  def sing
+    return "Do re me fa so la ti do"
+  end
+
+  def cheer
+    return "Yaldi!"
+  end
 end

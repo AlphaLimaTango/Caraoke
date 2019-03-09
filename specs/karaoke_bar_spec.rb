@@ -46,6 +46,7 @@ class TestKaraokeBar < MiniTest::Test
 
   def test_check_guest_into_karaoke_room
     @karaoke_bar.check_guest_into_karaoke_room(@guest1, @room_medium)
+    assert_equal([@guest1], @room_medium.people_in_room)
     assert_equal([], @karaoke_bar.people_in_lounge)
   end
 
