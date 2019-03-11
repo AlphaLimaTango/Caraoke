@@ -24,4 +24,16 @@ class Guest
   def cheer
     return "Yaldi!"
   end
+
+  def buy_drink(drink)
+    return @drunkenness += drink.alcohol_level
+  end
+
+  def check_fav_song(playlist)
+    for song in playlist
+      if song == @fav_song
+        return
+  end
+
+
 end
